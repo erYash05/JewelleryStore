@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#1c1b1a", "on-secondary-fixed-variant": "#59431b", "secondary": "#735b30", "on-primary-fixed-variant": "#484645", "surface-container-low": "#f7f3ec", "on-error-container": "#93000a", "surface-container-highest": "#e6e2db", "inverse-surface": "#31302c", "primary-fixed-dim": "#cac6c4", "tertiary": "#000000", "surface-container": "#f1ede6", "on-primary": "#ffffff", "on-surface-variant": "#4a4640", "inverse-primary": "#cac6c4", "on-background": "#1c1c18", "surface-container-high": "#ebe8e1", "on-tertiary-fixed-variant": "#4a4640", "on-secondary": "#ffffff", "primary-fixed": "#e6e2df", "on-tertiary-fixed": "#1e1b16", "primary": "#000000", "secondary-fixed": "#ffdea8", "surface": "#fdf9f2", "on-primary-container": "#868382", "surface-container-lowest": "#ffffff", "surface-variant": "#e6e2db", "error-container": "#ffdad6", "secondary-container": "#fcdba5", "background": "#fdf9f2", "on-secondary-fixed": "#271900", "inverse-on-surface": "#f4f0e9", "surface-dim": "#dddad3", "secondary-fixed-dim": "#e2c28e", "tertiary-fixed": "#e8e1d8", "surface-bright": "#fdf9f2", "on-tertiary-container": "#88837b", "tertiary-fixed-dim": "#ccc6bd", "on-secondary-container": "#775f33", "on-surface": "#1c1c18", "primary-container": "#1c1b1a", "on-error": "#ffffff", "error": "#ba1a1a", "surface-tint": "#605e5c", "outline": "#7b766f", "outline-variant": "#ccc6bd", "on-tertiary": "#ffffff", "tertiary-container": "#1e1b16" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "4rem", "space-xl": "4rem", "space-lg": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "1.25rem" }, "fontFamily": { "label-uppercase": [ "Hanken Grotesk" ], "caption": [ "Hanken Grotesk" ], "display-xl-mobile": [ "EB Garamond" ], "display-xl": [ "EB Garamond" ], "body-lg": [ "Hanken Grotesk" ], "display-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-sm": [ "EB Garamond" ], "body-md": [ "Hanken Grotesk" ] }, "fontSize": { "label-uppercase": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.18em", "fontWeight": "500" } ], "caption": [ "0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "400" } ], "display-xl-mobile": [ "2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-xl": [ "4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0.02em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-secondary/20 transition-colors duration-300"><div class="h-20 w-full px-margin md:px-margin-desktop flex items-center justify-between"><div class="flex items-center"><a class="flex flex-col" data-path="home" href="#"><span class="font-display-lg text-headline-sm md:text-headline-md tracking-[0.22em] text-on-surface uppercase leading-none">SHAKUNTALA</span><span class="font-label-uppercase text-caption text-secondary tracking-[0.28em] uppercase mt-1">JEWELLERS • GWALIOR</span></a></div><nav class="hidden lg:flex items-center gap-gutter-desktop h-full" data-active-classes="text-primary font-medium border-b-2 border-secondary"><div class="group relative h-full flex items-center"><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1 inline-flex items-center gap-1.5" data-path="collections" href="#"><span>Collections</span><span class="material-symbols-outlined text-[14px] text-secondary transition-transform duration-300 group-hover:rotate-180">expand_more</span></a><div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 ease-out absolute top-full left-1/2 -translate-x-1/2 w-[760px] bg-surface-container-low border border-secondary/30 shadow-2xl p-space-md"><div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-secondary/20"><span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Silver Ornaments Catalogues • Gwalior Archive</span><a class="font-label-uppercase text-caption text-on-surface-variant hover:text-secondary tracking-widest uppercase transition-colors" data-path="collections" href="#">View Entire Ledger →</a></div><div class="grid grid-cols-5 gap-space-sm"><a aria-current="page" class="group/item flex flex-col p-space-xs hover:bg-surface-container transition-colors text-primary font-medium border-b-2 border-secondary" data-path="silver-bangles" href="#"><div class="aspect-square w-full overflow-hidden bg-surface-container-high border border-secondary/20 mb-2"><img alt="Silver Bangles" class="w-full h-full object-cover transition-transform duration-500 group-hover/item:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHC7YEVirsXMREeE7Rh6EGkesFeLlU--dzikgwJ9rCYmOamIaj4KqRwzKJu1C-HX76qcTchBT7Is87_TJfSifV6v2N1P4mC7eYfVTJTGq4uJLEHXpJyIxITFS9IEPtVoCKqiUH_8YsSYf776U34CwwqDpFFzfPoQTd1fUXkdVNytdCzeG4iqdOnh_atPI01_ZNe8ovlwi-Vd9h5Y9-oKDqD6AKH_MIp0fqQchFhQ"/></div><span class="font-display-lg text-headline-sm text-sm text-on-surface leading-snug group-hover/item:text-secondary transition-colors">Silver Bangles</span><span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">925 Kada &amp; Churi</span></a><a class="group/item flex flex-col p-space-xs hover:bg-surface-container transition-colors" data-path="silver-bracelets" href="#"><div class="aspect-square w-full overflow-hidden bg-surface-container-high border border-secondary/20 mb-2"><img alt="Silver Bracelets" class="w-full h-full object-cover transition-transform duration-500 group-hover/item:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMpla4nAwtZHONWaSa6WRC4NZOkwQr778LuZwzEAQHFcQ5QZh1M6pF0DPi-PnyV6RUw9XQox9S9a17HBscHMbOaiaPxgbI8eYPr99YM-1nkhuam11tOR9m02ijQhdsqWUUXLyksi5eKZKsGUSnkovAIjEkkgAxLNm_5GbylrDpjZXreCKQC6n0p25FXlZ3yYyDDqM6_ggPRb5krxLfYIXghFRR3Ds6nwRA4Pmh_w"/></div><span class="font-display-lg text-headline-sm text-sm text-on-surface leading-snug group-hover/item:text-secondary transition-colors">Silver Bracelets</span><span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">Artisanal Chains</span></a><a class="group/item flex flex-col p-space-xs hover:bg-surface-container transition-colors" data-path="silver-necklaces" href="#"><div class="aspect-square w-full overflow-hidden bg-surface-container-high border border-secondary/20 mb-2"><img alt="Silver Necklaces" class="w-full h-full object-cover transition-transform duration-500 group-hover/item:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk0ZERm1RC69NSp75FoPxm9sa-sfVO9Uzj8X-AVHRXRdlNseG0rW_e4ZPKpzkdlsAHtsNCZIEY4U_L3L_crWS93jvCz9URQW_RQL54_ulD1UqK4KAI9XwR0idtCbONP7wj_rDfR9m2c0noz5V-Mr4l-KjE9_ezyPgHmK2p6Kk50raow0VbLD6clqnsFx94gcQC4o_yA5Zx3SduitiHexODye2mK3m7dW4hg4C03g"/></div><span class="font-display-lg text-headline-sm text-sm text-on-surface leading-snug group-hover/item:text-secondary transition-colors">Silver Necklaces</span><span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">Hasli &amp; Chokers</span></a><a class="group/item flex flex-col p-space-xs hover:bg-surface-container transition-colors" data-path="silver-earrings" href="#"><div class="aspect-square w-full overflow-hidden bg-surface-container-high border border-secondary/20 mb-2"><img alt="Silver Earrings" class="w-full h-full object-cover transition-transform duration-500 group-hover/item:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCofAfVvuyBV5Oj1drFJUYofAKPT2sUonxW0QPXLVvmlp8EcBK1ynVxjnMkc4xO1MvLX_fQ5SgZey1Wxu-xKlpy0SnqvlItldA4NTUwm6ChBSHyIJDFRybyiNkQKR2j8joG4XHKexB48ihhPa4HvpxNUD_XnX3xYJW4EsXpUfyX_sJTjPeZ-5-KT5V9i50kSL8EwiKkmULI225dtL4633Jee8F_fQRXA1x4qbzaKQ"/></div><span class="font-display-lg text-headline-sm text-sm text-on-surface leading-snug group-hover/item:text-secondary transition-colors">Silver Earrings</span><span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">Jhumkas &amp; Chandbalis</span></a><a class="group/item flex flex-col p-space-xs hover:bg-surface-container transition-colors" data-path="traditional-silver-ornaments" href="#"><div class="aspect-square w-full overflow-hidden bg-surface-container-high border border-secondary/20 mb-2"><img alt="Traditional Silver Ornaments" class="w-full h-full object-cover transition-transform duration-500 group-hover/item:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBli5B4Eq5edtYGx_Qzsdz1TaGEnKuSSrVH-cGQ0ZQQxjt5qdhvoi-qX98SKpMyDuzRKkacasGjVJm1HLVXWc0ohNXeKOxV1GPvrEetncPEdQ5kK_4LLaVag-58q4jrvgYEJwWiRCn3HMdbMGLmB7e4wnWtCt_dw3_nwbTWWRlsikR05jqr7I0Ptc_OdHh7yJdTKEmMyDk0QMP_S-bZCtolijO3PgjYhh1TNNMgQ"/></div><span class="font-display-lg text-headline-sm text-sm text-on-surface leading-snug group-hover/item:text-secondary transition-colors">Traditional Silver</span><span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">Payal &amp; Heritage Items</span></a></div></div></div><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="wholesale" href="#">Wholesale</a><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="our-story" href="#">Our Story</a><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm font-label-uppercase text-label-uppercase text-secondary border border-secondary hover:bg-secondary hover:text-on-secondary transition-colors" data-path="enquire" href="#">Enquire</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><label class="lg:hidden cursor-pointer text-on-surface p-1" for="mobile-menu-toggle"><span class="material-symbols-outlined text-2xl">menu</span></label></div></div><input class="peer hidden" id="mobile-menu-toggle" type="checkbox"/><div class="hidden peer-checked:block lg:hidden bg-surface-container-low border-b border-secondary/20 px-margin py-space-md max-h-[85vh] overflow-y-auto"><details class="group mb-space-sm"><summary class="flex items-center justify-between py-2 cursor-pointer list-none font-label-uppercase text-label-uppercase text-on-surface border-b border-secondary/20"><span class="tracking-wider uppercase">Collections</span><span class="material-symbols-outlined text-[18px] text-secondary group-open:rotate-180 transition-transform">expand_more</span></summary><div class="grid grid-cols-1 gap-space-xs pt-space-xs pl-space-xs"><a class="flex items-center gap-space-sm py-2 px-space-xs hover:bg-surface-container border-b border-secondary/10" data-path="silver-bangles" href="#"><img alt="Silver Bangles" class="w-10 h-10 object-cover border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZs1RLaAw36EwvMuHqv6JVbpm5b1cawKzyxAYr9Zn46VlqqwQoKp_AHgHDOPaUvj71UmSYtFAS6_SMd7eMaq-6EsT5LDdSAjSfuEJytkoiOukxt6CVVHJH16q6OOxkguh_2ATzOHqcoOWrkXo8jf9VYwVPtGSMLrRKoZ4aguEE4bGV03zkiJKkDqcgK1q52_uNI4rPftRH5_xL9WmVSbWf1SAIACcfKwoFSYsYw"/><div><span class="font-display-lg text-headline-sm text-sm text-on-surface block">Silver Bangles</span><span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Kada &amp; Churi</span></div></a><a class="flex items-center gap-space-sm py-2 px-space-xs hover:bg-surface-container border-b border-secondary/10" data-path="silver-bracelets" href="#"><img alt="Silver Bracelets" class="w-10 h-10 object-cover border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1jpqZ1zgasWbUwZTMch3gb11hvUP1dIez90K0xzrAaqDGl3AgSRWbii4XX3OLaniIkE215iw4ZFH4les743FDQv-IVwGQx7gCJt_jTuwekcOlhBNhWdELhq9-Get7s1DUwu2iNbjnGH21M_RiPy1-saR1yROzjES7po1QeRudC3fYEKjYSlhTHeovmrsginU7nW6wYi7jcD515yY0__Lwq2DbB2yDflVJ8lszA"/><div><span class="font-display-lg text-headline-sm text-sm text-on-surface block">Silver Bracelets</span><span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Artisanal Chains</span></div></a><a class="flex items-center gap-space-sm py-2 px-space-xs hover:bg-surface-container border-b border-secondary/10" data-path="silver-necklaces" href="#"><img alt="Silver Necklaces" class="w-10 h-10 object-cover border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2aSJYLzlf8FB_Oon0dXCTmaN4RwXKtxYHUqBcrzvxDzLqomDQEoKQO1mrwB8oddXgB8hL0mTLDyOLC6gZsgMkCiINMe8rZtbhw2e1Su7qqe7ROzcmQZdJcm3fhIuVRwgNv4SEs5pn7oxDf_Y6CEGJ1i1bekSl8IJd_cR7nvvjvB3pIk0fSUJ7JqwV25OUX9PjdiFkqqL1uTqPhiDlv2bj2UsEsojNItGtxLfc5w"/><div><span class="font-display-lg text-headline-sm text-sm text-on-surface block">Silver Necklaces</span><span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Hasli &amp; Chokers</span></div></a><a class="flex items-center gap-space-sm py-2 px-space-xs hover:bg-surface-container border-b border-secondary/10" data-path="silver-earrings" href="#"><img alt="Silver Earrings" class="w-10 h-10 object-cover border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDmOlJQ1EkWJJrj2Vw1tp-jOZItnCs0Djqect14DE5hmMhfjoHKVsn_52ILltFMYjqRGqFRjwkkmd1R-K1Em7IhclhAs9SIR5MxlLKwcTZ-gwz74cKKnCNj3hzDhkLuX0RH-lLp2VUc0dU1idl-zCsKRx-YA_CFYI1ucL4XY_Jn1xxeQnSwAUf0gcbBnjB5ndksJ0Uu8K52Ol40vHmSTmK39_9wnsn-Pn2NA76aA"/><div><span class="font-display-lg text-headline-sm text-sm text-on-surface block">Silver Earrings</span><span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Jhumkas &amp; Chandbalis</span></div></a><a class="flex items-center gap-space-sm py-2 px-space-xs hover:bg-surface-container" data-path="traditional-silver-ornaments" href="#"><img alt="Traditional Silver Ornaments" class="w-10 h-10 object-cover border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ9St70YmaRpfzfMqYxbXqYGYtpwOi4hf13ydUjVchGcWO87kfk0jZC4ifhP9J43-PRwaesok07H2vU37b6b-WxO79rZRP-sqy5RRvG_DzsWuBKtTEY7XV-s2UBcJSDJRRp5Tk6nSOdWG1RFkNAuF6Da-xuF92rnNNdmzAP0WgbofR_ESJRqjffvhjxTzI1ya0jVSPQ0XYZL4js-sFEM7ZxoJSPD06kGnwpwow-Q"/><div><span class="font-display-lg text-headline-sm text-sm text-on-surface block">Traditional Silver</span><span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Payal &amp; Heritage Items</span></div></a></div></details><div class="flex flex-col gap-space-xs border-t border-secondary/20 pt-space-xs"><a class="font-label-uppercase text-label-uppercase text-on-surface py-2 tracking-wider uppercase" data-path="wholesale" href="#">Wholesale</a><a class="font-label-uppercase text-label-uppercase text-on-surface py-2 tracking-wider uppercase" data-path="our-story" href="#">Our Story</a><a class="font-label-uppercase text-label-uppercase text-on-surface py-2 tracking-wider uppercase" data-path="contact" href="#">Contact</a><a class="font-label-uppercase text-label-uppercase text-secondary py-2 tracking-wider uppercase font-semibold" data-path="enquire" href="#">Submit Wholesale Enquiry →</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Archival Notice Strip -->
+<section class="w-full bg-surface-container-high py-space-xs px-margin md:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-uppercase text-caption tracking-widest gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-1.5 h-1.5 bg-secondary"></span>
+<span class="text-secondary font-medium">GWALIOR SARAFA ARCHIVE</span>
+<span class="text-on-surface-variant/40">/</span>
+<span>REGISTER NO. 1948-B</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>CURRENT 925 BULLION BENCHMARK: ₹74.80 / G</span>
+<span class="text-on-surface-variant/40">|</span>
+<span class="text-secondary uppercase">DIRECT ATELIER DISPATCH</span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Banner with Atmospheric Overlay -->
+<section class="relative w-full overflow-hidden bg-primary-container min-h-[460px] md:min-h-[520px] flex items-end">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Macro luxury photography of stacked intricate antique Indian 925 sterling silver bangles with chased floral motifs, rope twist edges, and beaten textures resting on dark slate and coarse raw linen cloth, illuminated by soft warm golden atelier daylight in Gwalior, deep shadows, cinematic quiet luxury composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwPLfmTl0HUN7EQVD6Bdo8qoLIOdFeIIyeyFWQ_1nnoCrBeT2UAHoipdm0nqDkrXSc8zQ_fHC9TJbeuZJckD-B5k4iIgMlu04jQqLZAg477yX2PAsafThWNfnv99YRLYCqfSNcDUvEXMMSrcGxLmV1PTL2XsEO0a8zX4lI7vQOmRHuQc87b89JPSdekthD6LXKJk_reX6RJXERLJCtemuyQcG5t0PTLhAXdPnZLA')"></div>
+<!-- Layered Tint & Vignette for Typographic Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/75 to-primary-container/40"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/50 to-transparent"></div>
+<div class="relative z-10 w-full px-margin md:px-margin-desktop py-space-xl max-w-7xl mx-auto flex flex-col justify-end">
+<!-- Archival Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-surface-variant/70 font-label-uppercase text-caption mb-space-md">
+<a class="hover:text-surface-container-lowest transition-colors" data-path="home" href="#">Home</a>
+<span class="text-secondary/70">/</span>
+<a class="hover:text-surface-container-lowest transition-colors" data-path="collections" href="#">Collections</a>
+<span class="text-secondary/70">/</span>
+<span class="text-secondary font-medium tracking-widest">Silver Bangles &amp; Kadas</span>
+</nav>
+<div class="max-w-3xl space-y-space-sm">
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-sm px-3 py-1 text-surface-container-lowest font-label-uppercase text-[11px] tracking-[0.2em] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Series 01 • Solid Sterling Moulds
+        </div>
+<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl text-surface-container-lowest font-normal tracking-tight leading-none">
+          Silver Bangles &amp; Kadas
+        </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-surface-container-highest max-w-2xl font-light leading-relaxed">
+          Hand-forged and precision-engraved in 925 sterling silver. Ready casting master moulds, substantial solid Kada weights, and wholesale consignment allocations direct from our Lashkar workshop.
+        </p>
+</div>
+<!-- Quick Metrics Ledger Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mt-space-lg pt-space-md border-t border-surface-container-highest/15 max-w-3xl">
+<div>
+<span class="font-label-uppercase text-[10px] text-surface-variant/70 block uppercase tracking-widest">Assay Standard</span>
+<span class="font-display-lg text-headline-sm text-surface-container-lowest">925 / 1000</span>
+</div>
+<div>
+<span class="font-label-uppercase text-[10px] text-surface-variant/70 block uppercase tracking-widest">Master Moulds</span>
+<span class="font-display-lg text-headline-sm text-surface-container-lowest">8 Active Lots</span>
+</div>
+<div>
+<span class="font-label-uppercase text-[10px] text-surface-variant/70 block uppercase tracking-widest">MOQ per Design</span>
+<span class="font-display-lg text-headline-sm text-surface-container-lowest">150 Grams</span>
+</div>
+<div>
+<span class="font-label-uppercase text-[10px] text-surface-variant/70 block uppercase tracking-widest">Hallmarking</span>
+<span class="font-display-lg text-headline-sm text-secondary">BIS Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter & Ledger Controls Bar -->
+<section class="sticky top-20 z-40 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop py-space-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<!-- Category Filter Pills (Minimalist Monoline Separators) -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1" id="filter-container">
+<button class="filter-btn active font-label-uppercase text-caption uppercase px-3 py-1.5 bg-primary text-on-primary transition-colors cursor-pointer" data-category="all">
+          All Bangles (08)
+        </button>
+<span class="text-secondary/40 font-light select-none">|</span>
+<button class="filter-btn font-label-uppercase text-caption uppercase px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" data-category="solid-kadas">
+          Solid Kadas
+        </button>
+<span class="text-secondary/40 font-light select-none">|</span>
+<button class="filter-btn font-label-uppercase text-caption uppercase px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" data-category="chased-engraved">
+          Chased &amp; Engraved
+        </button>
+<span class="text-secondary/40 font-light select-none">|</span>
+<button class="filter-btn font-label-uppercase text-caption uppercase px-3 py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" data-category="open-cuffs">
+          Open Cuffs
+        </button>
+</div>
+<!-- Sorting & Ledger View Toggle -->
+<div class="flex items-center justify-between sm:justify-end gap-space-md">
+<div class="flex items-center gap-2">
+<label class="font-label-uppercase text-caption text-secondary uppercase tracking-widest hidden sm:inline" for="sort-select">Sort Order:</label>
+<div class="relative">
+<select class="bg-surface-container-low text-on-surface font-label-uppercase text-caption py-1.5 pl-3 pr-7 border border-secondary/20 focus:outline-none focus:border-secondary cursor-pointer uppercase appearance-none" id="sort-select">
+<option value="curation">Atelier Curation</option>
+<option value="code-asc">Reference Code (Ascending)</option>
+<option value="code-desc">Reference Code (Descending)</option>
+<option value="weight-desc">Substantial Weight First</option>
+</select>
+<span class="material-symbols-outlined text-[14px] text-secondary absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-1 pl-space-sm border-l border-secondary/20">
+<button class="p-1.5 text-primary bg-surface-container hover:bg-surface-container-high transition-colors" id="grid-view-btn" title="Editorial Grid">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" id="compact-view-btn" title="Technical Ledger">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Showcase Catalogue Grid (4 Columns, 8 Exquisite Pieces) -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop" id="product-grid">
+<!-- Card 1: Virasat Filigree Kada -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="solid-kadas" data-code="SJ-B-001" data-weight="78">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Editorial close-up of Virasat 925 sterling silver kada featuring exquisite hand-pierced Gwalior filigree patterns, antique brushed silver finish on pale cream limestone pedestal, directional daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACsHtYnpOpIKLcvTpFVqsrtmNB-k0oTmVDfjzy6ojSk7tt2CPk3IOlTyGFjLyHKN7AvSpzprFPG1fVZDD_emZsTZKEGSz1Rvfzavklkh-O9k56tnkp1Q_n5uds_86yeAd1LOFwiK6CzwvZAHWk_VPZI0tvd2dK8YHkoynd3W6oj1VWpQDXT-ccgXSSilntdbWqYHxcRCqMIB93fUdpjjOWhcoO26zrdSUbWBqNiA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-001</span>
+<span class="bg-surface-container-lowest/90 text-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Master Mould</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            78g ± 3g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Kada / Filigree</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Virasat Filigree Kada
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Archaic pierced wire-lace filigree reinforced with solid outer ribbing, hand-finished by master shroffs in Sarafa Bazaar.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 2 Units</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: Gwalior Chased Solid Bangle Pair -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="chased-engraved" data-code="SJ-B-002" data-weight="95">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Pair of solid Gwalior chased 925 sterling silver bangles with traditional floral relief repousse patterns, placed on charcoal textured slate, high-definition metallic gleam and soft natural studio shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE-d3ycl8K-OQqjARROwTxJAzW6slqFTF-Fsws9xhr_qqn5I6isKr7qJy2_sTR-X0ffWhDZSJsGUhr6PyHVVqTu-GjMhQ-FsLGt4t_NJd73wQnSjYLBCezIC0EvT8pgWMYkQwEtaToCOJsFuibEtcYFzwRobFcgFVbUYZjVd-3s2INiLeIWEQaAwwFLFMWmfqtcusqJDwS85mgrlEyRekSbeBpRvF5s6tVv0cRhg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-002</span>
+<span class="bg-secondary text-on-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Pair Consignment</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            95g (Pair)
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Churi / Matched Pair</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Gwalior Chased Bangle Pair
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Heavy gauge churi pair embellished with chasing and engraving depicting historical Maratha flora flourishes.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 1 Pair</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Aura Hammered Contour Pair -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="solid-kadas" data-code="SJ-B-003" data-weight="64">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Editorial image of organic wave contoured silver bangles worn on wrist resting on sunlit sandstone architectural block, textured organic minimalist silversmithing, warm editorial light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGVEFwuWVYnkdYjMS4AOmKVf0PSrTT-IsKBt1aNOq2my5W0FLnsN-daxjzmnkJ0uB3ZxuCuuOTH3B3JpyZXhnZl5U-9U-0WQx2jdYzAMayPcMmjAt-juMw1eBqJjwDBNZNxEiDF7RD1nvuuJ8V5bubkW9DAa83eH-SsFb8QvbQmcWKCcSJI9OfIuVcgxJhdx-tElwO_kFA39fbnAAnu1O14hPLTrZ0Ae5ug08qwg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-003</span>
+<span class="bg-surface-container-lowest/90 text-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Modern Heritage</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            64g ± 2g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Contour / Organic</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Aura Hammered Contour
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Curved ergonomic undulating dual bands finished with subtle cold-hammered facets that reflect candlelight.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 3 Units</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4: Noor Twisted Wire Cuff -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="open-cuffs" data-code="SJ-B-004" data-weight="52">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Top down studio view of an open-end Noor twisted wire torque silver cuff with terminal carved spherical knobs, laid on raw off-white textured linen fabric, quiet luxury Indian silversmithing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK_EP-a-IerqMSHqf4KY5HJF6HuR0rKgneUkCvJgQgjB7l3LoXWWyFPQoh-mE03nKKrmzqzX8RKq2DvqamkU3Cg795yqSx_esGFyykvXXi4rR54dXdTuWNWbkrDH2ZAMItnkI-ea_sMHdIIKt07qnFNP1loDt7zsLV7me6vrKcl4fRPGNP3r4PWZD7FPaDtpxZM4C06RVw9AD18mmBgD5f5VjzqnRCoUE7o-HcMg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-004</span>
+<span class="bg-surface-container-lowest/90 text-on-surface-variant font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Open Gauge</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            52g ± 1.5g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Cuff / Torque</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Noor Twisted Wire Cuff
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Three-ply hand-braided 925 sterling silver wires annealed for resilient flex, capped with fluted solid finials.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 4 Units</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 5: Chandrika Carved Broad Kada -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="chased-engraved" data-code="SJ-B-005" data-weight="110">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Broad statement silver cuff kada with elaborate deep-relief floral engravings and scalloped edges, resting on dark basalt stone surface under sharp angled spotlighting highlighting pure silver polish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBfo0GvP6fP4ze_h9el_oFU3rm2y8S0u-3JAHGocV9c7T2foq_IlZfvY90blcgmwwI0PBI_zKWi0iAQNG-m9uZxBgAM8g6n8n-U13rYDqUrjGLz-_ZpbUdl_G3bRM8I77zGqZVf8naBF3GnSsHlsVGIm8MCBgaVN73tE9Ylgu1AyRCvsWiTErdtfdEtyRmrnYvJF34ON2kDLx7Q-GvsichtCazaf6yKjNoxxLw5g"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-005</span>
+<span class="bg-secondary text-on-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Heavy Gauge</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            110g ± 4g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Broad Kada / Chased</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Chandrika Broad Kada
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              38mm broad silver cuff forged from 2mm sheet ingot, inscribed with traditional Chandrika vine motifs.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 1 Unit</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 6: Sona-Rupa Dual Tone Silver Bangle -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="solid-kadas" data-code="SJ-B-006" data-weight="72">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Editorial product display of Sona-Rupa dual tone silver bangle with fine 24k gold leaf accents fused onto 925 sterling silver geometric body, placed on raw beige travertine slab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgxYo45S15jws0dJt3fRwBZWl_i7R4gaXqu0Ooy_LoHHKHvMp6oFQa5iy9JcjgxOIzCHWKxrhhc3ygRrBpDYyySpDLGzzL0yL8K8rPR8WODGdM6R9c9cIB-sH3j9HCkH3n9DI1ZOLXxxDk2xM2QdrANKJbkmHySpKLI54fT3uF8bQ3xm1tlsMmRcfdA3ZngUb5WmVtB7N_hDvZO4uJRZEJXQTWUm1UYOQeMwwGpw"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-006</span>
+<span class="bg-surface-container-lowest/90 text-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Gilded Detail</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            72g ± 2g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Dual Tone / Keum-boo</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 + Au</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Sona-Rupa Dual Tone Bangle
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Oxidised 925 sterling substrate bonded with 24k gold vermeil highlight facets along the central ridge.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 2 Units</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 7: Mandir Temple Motif Bangle -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="chased-engraved" data-code="SJ-B-007" data-weight="86">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Intricate temple motif silver bangle crafted with antique matte oxidised finish displaying architectural gopuram niches and floral borders, presented on coarse grey silk drapery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALP6ICXPTWFhlXfkgF68HCrxmQsbWoxhozeT2OCjj5jQiHJCfswnw-MG7YtBICyZxupwD2SO-T0kIwNzjrtQWcyIUqsMjfE03S4_qpIC6IejGsReMU627w2fJ1_pW0ZqWzIWKy8c0_Rrzn3Z28bgLHOcc7olChoDEn5wvZBxYuvA4YJ_dOZx6xUY1nfLKZeeuCL86rYHaeyPrfnpWikl8pzUElgmwwlhq4tyUHCg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-007</span>
+<span class="bg-surface-container-lowest/90 text-on-surface-variant font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Temple Archive</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            86g ± 3g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Temple Work / Relief</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Mandir Temple Motif Bangle
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Archaic relief embossing inspired by 11th-century Sasbahu temple friezes, hand-chased in antique silver finish.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 2 Units</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 8: Nakshi Heritage Kada -->
+<article class="product-item group flex flex-col bg-surface-container-low transition-all duration-300" data-category="open-cuffs" data-code="SJ-B-008" data-weight="104">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" data-alt="Heavy solid silver Nakshi heritage kada featuring hand-carved elephant makara heads on terminals and deep engraved scrollwork along circumference, warm studio side-lighting on ivory linen background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU7-EZgIMtw7lU_jB1NvNyn6EiBWvppLpnYnZ8VNZB8k7MlruT3tn4PR7gRKcjqkT7MxzopzWkmFTPmEoKCcc-ozbE1EPWhreXK4culc5tNoeksySDYKfB8vez7G6NGTaSzOr2M9Fzgwtw25UDmadm3KaDEv5ogF1GtZiCKJbue91uSRUe-TimmGCOdQpmjaaro60XA7puKDKL9fUbDMSvIq-Y2iW_mtetqHPgXQ"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary/90 text-on-primary font-label-uppercase text-[10px] px-2 py-0.5 tracking-widest uppercase">SJ-B-008</span>
+<span class="bg-secondary text-on-secondary font-label-uppercase text-[9px] px-2 py-0.5 tracking-wider uppercase">Makara Finial</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs px-2.5 py-1 text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase shadow-xs">
+            104g ± 3g
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.2em]">Nakshi / Open Kada</span>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant">.925 Pure</span>
+</div>
+<h2 class="font-display-lg text-headline-sm text-on-surface leading-tight group-hover:text-secondary transition-colors">
+              Nakshi Heritage Kada
+            </h2>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 line-clamp-2 leading-relaxed">
+              Sculpted solid silver terminal heads featuring traditional Makara symbolism, balanced with heavy core gauge.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-secondary/15 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase">MOQ: 1 Unit</span>
+<a class="font-label-uppercase text-caption text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-1 group/link" data-path="enquire" href="#">
+<span>Enquire for Wholesale</span>
+<span class="material-symbols-outlined text-[14px] transition-transform duration-200 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Technical Ledger Overview (Wholesale Specification Drawer) -->
+<section class="w-full bg-surface-container px-margin md:px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-md border-b border-secondary/20 gap-space-sm">
+<div>
+<span class="font-label-uppercase text-caption text-secondary uppercase tracking-[0.25em]">Atelier Standards</span>
+<h2 class="font-display-lg text-headline-md text-on-surface font-normal mt-1">Wholesale Specification Table</h2>
+</div>
+<p class="font-body-md text-caption text-on-surface-variant max-w-md">
+          All consignments include individual BIS hallmarking certificates, tamper-evident batch pouches, and Gwalior Sarafa invoice ledgers.
+        </p>
+</div>
+<div class="overflow-x-auto mt-space-md">
+<table class="w-full text-left font-body-md text-caption border-collapse">
+<thead>
+<tr class="bg-surface-container-high border-b border-secondary/20 text-on-surface font-label-uppercase text-[10px] tracking-widest uppercase">
+<th class="py-3 px-4">Article Code</th>
+<th class="py-3 px-4">Classification</th>
+<th class="py-3 px-4">Standard Size (Dia)</th>
+<th class="py-3 px-4">Avg. Gross Wt.</th>
+<th class="py-3 px-4">Alloy Purity</th>
+<th class="py-3 px-4">Die / Casting Status</th>
+<th class="py-3 px-4 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-secondary/10 bg-surface-container-low">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-mono font-medium text-primary">SJ-B-001</td>
+<td class="py-3 px-4">Virasat Filigree Kada</td>
+<td class="py-3 px-4">2.4, 2.6, 2.8 Anna</td>
+<td class="py-3 px-4 font-mono">78 Grams</td>
+<td class="py-3 px-4"><span class="bg-secondary/15 text-secondary px-2 py-0.5 rounded-none font-semibold">925 BIS</span></td>
+<td class="py-3 px-4 text-on-surface-variant">Ready Ingot Mould</td>
+<td class="py-3 px-4 text-right">
+<a class="font-label-uppercase text-[11px] text-secondary hover:text-on-surface uppercase font-medium" data-path="enquire" href="#">Request Spec</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-mono font-medium text-primary">SJ-B-002</td>
+<td class="py-3 px-4">Gwalior Chased Pair</td>
+<td class="py-3 px-4">2.4, 2.6 Anna</td>
+<td class="py-3 px-4 font-mono">95 Grams (Pair)</td>
+<td class="py-3 px-4"><span class="bg-secondary/15 text-secondary px-2 py-0.5 rounded-none font-semibold">925 BIS</span></td>
+<td class="py-3 px-4 text-on-surface-variant">Die Ready (Consignment)</td>
+<td class="py-3 px-4 text-right">
+<a class="font-label-uppercase text-[11px] text-secondary hover:text-on-surface uppercase font-medium" data-path="enquire" href="#">Request Spec</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-mono font-medium text-primary">SJ-B-003</td>
+<td class="py-3 px-4">Aura Hammered Contour</td>
+<td class="py-3 px-4">Flexible Ergonomic</td>
+<td class="py-3 px-4 font-mono">64 Grams</td>
+<td class="py-3 px-4"><span class="bg-secondary/15 text-secondary px-2 py-0.5 rounded-none font-semibold">925 BIS</span></td>
+<td class="py-3 px-4 text-on-surface-variant">Continuous Cast</td>
+<td class="py-3 px-4 text-right">
+<a class="font-label-uppercase text-[11px] text-secondary hover:text-on-surface uppercase font-medium" data-path="enquire" href="#">Request Spec</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-mono font-medium text-primary">SJ-B-005</td>
+<td class="py-3 px-4">Chandrika Broad Kada</td>
+<td class="py-3 px-4">2.6, 2.8 Anna (Broad 38mm)</td>
+<td class="py-3 px-4 font-mono">110 Grams</td>
+<td class="py-3 px-4"><span class="bg-secondary/15 text-secondary px-2 py-0.5 rounded-none font-semibold">925 BIS</span></td>
+<td class="py-3 px-4 text-on-surface-variant">Hand Repoussé Batch</td>
+<td class="py-3 px-4 text-right">
+<a class="font-label-uppercase text-[11px] text-secondary hover:text-on-surface uppercase font-medium" data-path="enquire" href="#">Request Spec</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Editorial Closing Trade Band -->
+<section class="w-full bg-primary-container text-on-primary px-margin md:px-margin-desktop py-space-xl relative overflow-hidden">
+<!-- Subtle Architectural Background Watermark Pattern -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-center">
+<span class="font-display-xl text-[240px] select-none text-surface-container-lowest">SJ</span>
+</div>
+<div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="inline-flex items-center gap-2 border border-secondary/40 px-3 py-1 text-secondary font-label-uppercase text-caption tracking-widest uppercase">
+          Workshop B2B Channel
+        </div>
+<h2 class="font-display-xl text-headline-md md:text-display-lg text-surface-container-lowest font-normal leading-tight">
+          Looking for bespoke casting or specific regional gauges? Direct workshop trade access.
+        </h2>
+<p class="font-body-md text-body-md text-surface-variant max-w-2xl">
+          We fabricate customized bangles and kadas up to 250 grams per unit. Available in antique black ox, rhodium flash, or 24K micron gold plate according to state regional size preferences (2.2 through 2.12 Anna).
+        </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm justify-center">
+<a class="w-full py-3.5 px-space-md bg-secondary hover:bg-secondary/90 text-on-secondary font-label-uppercase text-label-uppercase tracking-[0.2em] text-center transition-colors shadow-sm flex items-center justify-center gap-2" data-path="enquire" href="#">
+<span>Send Wholesale Enquiry</span>
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</a>
+<a class="w-full py-3.5 px-space-md border border-surface-variant/30 hover:border-surface-variant text-surface-container-lowest font-label-uppercase text-label-uppercase tracking-[0.2em] text-center transition-colors flex items-center justify-center gap-2 group" href="https://wa.me/918104304050" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[18px]">chat</span>
+<span>WhatsApp: +91 81043 04050</span>
+</a>
+<div class="text-center pt-2">
+<span class="font-label-uppercase text-[10px] text-surface-variant/60 tracking-widest uppercase">
+            Sarafa Desk Hours: 10:30 AM — 08:30 PM IST (Mon — Sat)
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initBanglesCatalog() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productItems = document.querySelectorAll('.product-item');
+    const sortSelect = document.getElementById('sort-select');
+    const productGrid = document.getElementById('product-grid');
+    const gridViewBtn = document.getElementById('grid-view-btn');
+    const compactViewBtn = document.getElementById('compact-view-btn');
+
+    // Filtering logic
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('text-on-surface-variant');
+        });
+        this.classList.add('bg-primary', 'text-on-primary');
+        this.classList.remove('text-on-surface-variant');
+
+        const category = this.getAttribute('data-category');
+        productItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Sorting logic
+    if (sortSelect && productGrid) {
+      sortSelect.addEventListener('change', function() {
+        const itemsArray = Array.from(productItems);
+        const criteria = this.value;
+
+        itemsArray.sort((a, b) => {
+          if (criteria === 'code-asc') {
+            return a.getAttribute('data-code').localeCompare(b.getAttribute('data-code'));
+          } else if (criteria === 'code-desc') {
+            return b.getAttribute('data-code').localeCompare(a.getAttribute('data-code'));
+          } else if (criteria === 'weight-desc') {
+            return parseFloat(b.getAttribute('data-weight') || 0) - parseFloat(a.getAttribute('data-weight') || 0);
+          }
+          return 0; // default curation
+        });
+
+        itemsArray.forEach(item => productGrid.appendChild(item));
+      });
+    }
+
+    // Grid layout density toggles
+    if (gridViewBtn && compactViewBtn && productGrid) {
+      gridViewBtn.addEventListener('click', () => {
+        productGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop';
+        gridViewBtn.classList.add('text-primary', 'bg-surface-container');
+        compactViewBtn.classList.remove('text-primary', 'bg-surface-container');
+      });
+
+      compactViewBtn.addEventListener('click', () => {
+        productGrid.className = 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-sm';
+        compactViewBtn.classList.add('text-primary', 'bg-surface-container');
+        gridViewBtn.classList.remove('text-primary', 'bg-surface-container');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-primary-container text-surface-container-low"><div class="w-full px-margin md:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop pb-space-xl border-b border-surface-container-highest/10"><div class="md:col-span-5 space-y-space-md"><span class="font-display-lg text-headline-md text-surface-container-lowest tracking-[0.16em] uppercase block">SHAKUNTALA JEWELLERS</span><p class="font-body-md text-surface-variant max-w-md">Generational wholesale purveyors of 925 sterling silver and high-grade artisanal ornaments rooted in the heritage metalsmithing traditions of Gwalior.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="font-label-uppercase text-caption text-secondary border border-secondary/40 px-2 py-1">BIS HALLMARKED</span><span class="font-label-uppercase text-caption text-secondary border border-secondary/40 px-2 py-1">.925 STERLING</span></div></div><div class="md:col-span-2 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Catalogues</h3><ul class="space-y-space-xs font-body-md text-surface-container-highest text-sm"><li><a class="hover:text-surface-bright transition-colors" data-path="silver-bangles" href="#">Silver Bangles</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="silver-bracelets" href="#">Silver Bracelets</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="silver-necklaces" href="#">Silver Necklaces</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="silver-earrings" href="#">Silver Earrings</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="traditional-silver-ornaments" href="#">Traditional Silver Ornaments</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Wholesale Spec</h3><ul class="space-y-space-xs font-body-md text-surface-container-highest text-sm"><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Bullion Indices</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Bulk Invoicing</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Purity Certification</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">B2B Dispatch</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Atelier &amp; Office</h3><p class="font-body-md text-surface-container-highest text-sm leading-relaxed">Sarafa Bazaar, Lashkar<br/>Gwalior, Madhya Pradesh — 474001<br/><span class="text-secondary mt-1 block">b2b@shakuntalajewellers.com</span></p></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><p>© 2025 Shakuntala Jewellers Pvt. Ltd. All rights reserved.</p><p class="tracking-widest uppercase text-[10px] text-surface-container-highest/60">Engineered by <span class="text-surface-container-lowest font-medium tracking-normal">Y2X Digital Agency</span></p></div></div></footer></body></html>

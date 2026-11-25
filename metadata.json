@@ -1,0 +1,6 @@
+{
+  "name": "Shakuntala Jewellers",
+  "description": "Wholesale silver ornaments house in Sarafa Bazaar, Gwalior.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

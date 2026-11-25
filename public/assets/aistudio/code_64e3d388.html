@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#1c1b1a", "on-secondary-fixed-variant": "#59431b", "secondary": "#735b30", "on-primary-fixed-variant": "#484645", "surface-container-low": "#f7f3ec", "on-error-container": "#93000a", "surface-container-highest": "#e6e2db", "inverse-surface": "#31302c", "primary-fixed-dim": "#cac6c4", "tertiary": "#000000", "surface-container": "#f1ede6", "on-primary": "#ffffff", "on-surface-variant": "#4a4640", "inverse-primary": "#cac6c4", "on-background": "#1c1c18", "surface-container-high": "#ebe8e1", "on-tertiary-fixed-variant": "#4a4640", "on-secondary": "#ffffff", "primary-fixed": "#e6e2df", "on-tertiary-fixed": "#1e1b16", "primary": "#000000", "secondary-fixed": "#ffdea8", "surface": "#fdf9f2", "on-primary-container": "#868382", "surface-container-lowest": "#ffffff", "surface-variant": "#e6e2db", "error-container": "#ffdad6", "secondary-container": "#fcdba5", "background": "#fdf9f2", "on-secondary-fixed": "#271900", "inverse-on-surface": "#f4f0e9", "surface-dim": "#dddad3", "secondary-fixed-dim": "#e2c28e", "tertiary-fixed": "#e8e1d8", "surface-bright": "#fdf9f2", "on-tertiary-container": "#88837b", "tertiary-fixed-dim": "#ccc6bd", "on-secondary-container": "#775f33", "on-surface": "#1c1c18", "primary-container": "#1c1b1a", "on-error": "#ffffff", "error": "#ba1a1a", "surface-tint": "#605e5c", "outline": "#7b766f", "outline-variant": "#ccc6bd", "on-tertiary": "#ffffff", "tertiary-container": "#1e1b16" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "4rem", "space-xl": "4rem", "space-lg": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "1.25rem" }, "fontFamily": { "label-uppercase": [ "Hanken Grotesk" ], "caption": [ "Hanken Grotesk" ], "display-xl-mobile": [ "EB Garamond" ], "display-xl": [ "EB Garamond" ], "body-lg": [ "Hanken Grotesk" ], "display-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-sm": [ "EB Garamond" ], "body-md": [ "Hanken Grotesk" ] }, "fontSize": { "label-uppercase": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.18em", "fontWeight": "500" } ], "caption": [ "0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "400" } ], "display-xl-mobile": [ "2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-xl": [ "4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0.02em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)] transition-colors duration-300"><div class="h-20 w-full px-margin md:px-margin-desktop flex items-center justify-between"><div class="flex items-center"><a class="flex flex-col" data-path="home" href="#"><span class="font-display-lg text-headline-sm md:text-headline-md tracking-[0.22em] text-on-surface uppercase leading-none">SHAKUNTALA</span><span class="font-label-uppercase text-caption text-secondary tracking-[0.28em] uppercase mt-1">JEWELLERS • GWALIOR</span></a></div><nav class="hidden lg:flex items-center gap-gutter-desktop" data-active-classes="text-primary font-medium border-b border-secondary"><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="collections" href="#">Collections</a><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="wholesale" href="#">Wholesale</a><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="our-story" href="#">Our Story</a><a class="font-label-uppercase text-label-uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm font-label-uppercase text-label-uppercase text-secondary border border-secondary hover:bg-secondary hover:text-on-secondary transition-colors" data-path="enquire" href="#">Enquire</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- =========================================================================
+       HERO SECTION: Full Bleed Editorial Campaign
+       ========================================================================= -->
+<section class="relative w-full min-h-[92vh] flex items-end justify-start overflow-hidden bg-primary -mt-20 pt-20">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="Shakuntala Jewellers Wholesale Masterpiece" class="w-full h-full object-cover object-center filter contrast-[1.03] brightness-[0.78]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKJ33BPt2g0z0O9YwLJR3tgbmiZsaqk_VgzBC4yoaFdGEyYnVojzppmK-6zla_ePS6vfUamlL9WYqb4xvuCBpviHqi_ivoKmz5Vr3RHG_2FjN2C56OMoDEq7wIVI2LG2zYuQZVxDiytKpP6sk6Y17FUL8aS_G_DHR3P7krQrgQVVpZcI4stJGY4vSXhOncMCCPzYLfGh0vPAFzr6NnzjgdpKLXUCl9dPL9gXcw2Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<!-- Hero Content Overlay -->
+<div class="relative z-10 w-full px-margin md:px-margin-desktop pb-16 md:pb-24 pt-32 max-w-7xl">
+<div class="space-y-6 max-w-3xl">
+<div class="inline-flex items-center gap-3">
+<span class="w-8 h-[1px] bg-secondary-fixed"></span>
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.28em] uppercase">WHOLESALE SILVER ORNAMENTS • GWALIOR</span>
+</div>
+<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl text-surface-container-lowest font-normal leading-[1.08] tracking-[-0.015em]">
+          The Art of Silver.<br/>
+<em class="font-display-xl italic font-light text-secondary-fixed">Crafted to Inspire.</em>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-xl font-light leading-relaxed">
+          Discover an exquisite collection of silver ornaments designed for timeless elegance. Curated trade access for jewelers and purveyors across India.
+        </p>
+<div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+<a class="px-8 py-3.5 bg-secondary text-primary font-label-uppercase text-label-uppercase tracking-[0.2em] font-medium transition-colors hover:bg-secondary-fixed duration-150 inline-block text-center" href="#collections-anchor">
+            Explore Collections
+          </a>
+<a class="group inline-flex items-center gap-3 font-label-uppercase text-label-uppercase tracking-[0.2em] text-surface-bright py-2 border-b border-secondary/60 hover:border-secondary-fixed transition-colors" href="#wholesale-section">
+<span>Wholesale Enquiries</span>
+<span class="material-symbols-outlined text-[15px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom Scroll Indicator -->
+<div class="absolute bottom-6 right-margin md:right-margin-desktop z-10 hidden sm:flex flex-col items-center gap-3">
+<span class="font-label-uppercase text-[10px] text-surface-container-highest/70 tracking-[0.3em] uppercase [writing-mode:vertical-rl]">Scroll</span>
+<div class="w-[1px] h-10 bg-secondary/30 relative overflow-hidden">
+<div class="w-full h-1/2 bg-secondary animate-pulse"></div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       01 — COLLECTIONS: Editorial Asymmetric Collage
+       ========================================================================= -->
+<section class="w-full bg-surface py-24 md:py-32 px-margin md:px-margin-desktop" id="collections-anchor">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-secondary/20">
+<div>
+<span class="font-label-uppercase text-caption text-secondary tracking-[0.26em] uppercase block mb-3">01 — ARCHIVAL PORTFOLIO</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-normal">Explore the Collections</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm mt-4 md:mt-0 leading-relaxed">
+        Five sovereign lines sculpted from refined sterling silver, reflecting Sarafa Bazaar's storied craftsmanship.
+      </p>
+</div>
+<!-- Asymmetrical 12-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop">
+<!-- 1. Silver Bangles (Span 7) -->
+<div class="md:col-span-7 group relative bg-surface-container-low overflow-hidden border border-secondary/15 flex flex-col justify-between">
+<div class="relative overflow-hidden aspect-[16/10] w-full">
+<img alt="Handcrafted Silver Bangles and Kadas" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIVR8v_tpjtD0kgQ_hYnrH-gTTuNvsoCnTxHF7nLDBfcyWFkpVwMR6sbN1lwhuZHh_nj-b685602xt7DZEiSlir4xhg-N20YDlrOfVlVj5j0XtTlSaR6yNE_TjsZynKV7XGPKTTghx5rAqqBgnpsiZMTzr6Nb-ECP1z-IbaMLLHmuafktqjxSuTTH7Wk6AwNQem23C54LX8JvzXi20mGTqOTNl5MpPHdlTkfcfsA"/>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+<span class="absolute top-4 left-4 bg-primary text-surface-container-lowest font-label-uppercase text-[10px] tracking-[0.2em] px-2.5 py-1">COLLECTION I</span>
+</div>
+<div class="p-8 flex items-baseline justify-between bg-surface-container-low">
+<div>
+<h3 class="font-display-lg text-headline-md text-on-surface font-normal">Silver Bangles &amp; Kadas</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Intricate hand-engraved broad cuffs &amp; traditional solid sets.</p>
+</div>
+<button class="group/btn inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-secondary hover:text-on-surface transition-colors py-1 border-b border-secondary/40 hover:border-secondary" onclick="openDrawer('Silver Bangles &amp; Kadas')">
+<span>View collection</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">north_east</span>
+</button>
+</div>
+</div>
+<!-- 2. Silver Bracelets (Span 5, Portrait) -->
+<div class="md:col-span-5 group relative bg-surface-container-low overflow-hidden border border-secondary/15 flex flex-col justify-between">
+<div class="relative overflow-hidden aspect-[4/5] w-full">
+<img alt="Silver Fluid Bracelets" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8YQyWhaEyOO3rn2E44mlZN7ucYTNCPLy2AdHOJrZP5izvpZ28M90_jp-2byoLwzbepZg5c9JoatHHB50E6abM1yamL68JeFZM1IxQBVv-xrmhvM5E1kZ9Wx3CQzWMGz1FK_qgHlV4tCQ-fgIg4abjpNvNGQlcd6GZ-MbIIzY0hdzJB9z91giB0T1KK0y_hVWVNUn4oAvoey63WlIKtIwAaz1Z3fOd8V24R9FXUw"/>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+<span class="absolute top-4 left-4 bg-primary text-surface-container-lowest font-label-uppercase text-[10px] tracking-[0.2em] px-2.5 py-1">COLLECTION II</span>
+</div>
+<div class="p-8 flex items-baseline justify-between bg-surface-container-low">
+<div>
+<h3 class="font-display-lg text-headline-md text-on-surface font-normal">Silver Bracelets</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Articulated links, sculpted bands, and fluid wrist ornaments.</p>
+</div>
+<button class="group/btn inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-secondary hover:text-on-surface transition-colors py-1 border-b border-secondary/40 hover:border-secondary" onclick="openDrawer('Silver Bracelets')">
+<span>View collection</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">north_east</span>
+</button>
+</div>
+</div>
+<!-- 3. Silver Necklaces (Span 5, Tall Vertical) -->
+<div class="md:col-span-5 group relative bg-surface-container-low overflow-hidden border border-secondary/15 flex flex-col justify-between">
+<div class="relative overflow-hidden aspect-[4/5] w-full">
+<img alt="Sculpted Silver Necklaces and Chokers" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzBzBh4Y_PBVs_KUTrrqBJ0FXPP7cdzS1B0UR9ZbVtyXvt2uiP6sDN3WMNW-uHtXyFtvLAWdrXBBnvvmzwTASzHc9D0TyNoKGVtyh0pwcXlJcsnReIvwhO6SazZHfYID8_VRVhn9G8ioNz4tHAk7Uyuz0r8y__AHEQ9w90IzH67XaOJMg19AIlNiJIhvi0MfTASL1s-mZxDV9yCuWh2F9lMpyLRXMS00x77sRAgQ"/>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+<span class="absolute top-4 left-4 bg-primary text-surface-container-lowest font-label-uppercase text-[10px] tracking-[0.2em] px-2.5 py-1">COLLECTION III</span>
+</div>
+<div class="p-8 flex items-baseline justify-between bg-surface-container-low">
+<div>
+<h3 class="font-display-lg text-headline-md text-on-surface font-normal">Silver Necklaces</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Torques, collars, and ancestral layered bridal chokers.</p>
+</div>
+<button class="group/btn inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-secondary hover:text-on-surface transition-colors py-1 border-b border-secondary/40 hover:border-secondary" onclick="openDrawer('Silver Necklaces')">
+<span>View collection</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">north_east</span>
+</button>
+</div>
+</div>
+<!-- 4. Silver Earrings (Span 7, Square Composition) -->
+<div class="md:col-span-7 group relative bg-surface-container-low overflow-hidden border border-secondary/15 flex flex-col justify-between">
+<div class="relative overflow-hidden aspect-[16/10] w-full">
+<img alt="Minimalist Silver Earrings" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZeK4WCXHx2LIlo5TTqBkZqWJfIeV5-WV-AmBQKLe3ypqOtRZKcybythJC-e26Zvjlb-9a2oDgrB17nPXcXJQS7fGSpGEaviavoPmHSuUg_kfQnMjWYK_Dc4ns5Y_qN0Z8NBcfHZcbH8eb7uuz3XldbHUJ3pfdtYfd1nMhy--GUEgzhnSmmkEGNsXar4vDG9YuVCRnVObX_paaHmHq-6s8WuzhfsUuMYqIW7zV2A"/>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+<span class="absolute top-4 left-4 bg-primary text-surface-container-lowest font-label-uppercase text-[10px] tracking-[0.2em] px-2.5 py-1">COLLECTION IV</span>
+</div>
+<div class="p-8 flex items-baseline justify-between bg-surface-container-low">
+<div>
+<h3 class="font-display-lg text-headline-md text-on-surface font-normal">Silver Earrings &amp; Jhumkas</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Chandbalis, droplets, studs, and filigree hanging accents.</p>
+</div>
+<button class="group/btn inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-secondary hover:text-on-surface transition-colors py-1 border-b border-secondary/40 hover:border-secondary" onclick="openDrawer('Silver Earrings &amp; Jhumkas')">
+<span>View collection</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">north_east</span>
+</button>
+</div>
+</div>
+<!-- 5. Traditional Silver Ornaments (Span 12, Wide Banner) -->
+<div class="md:col-span-12 group relative bg-surface-container-low overflow-hidden border border-secondary/15">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-7 relative overflow-hidden aspect-[16/8] lg:aspect-auto lg:h-[340px]">
+<img alt="Traditional Gwalior Silver Ornaments" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKJ33BPt2g0z0O9YwLJR3tgbmiZsaqk_VgzBC4yoaFdGEyYnVojzppmK-6zla_ePS6vfUamlL9WYqb4xvuCBpviHqi_ivoKmz5Vr3RHG_2FjN2C56OMoDEq7wIVI2LG2zYuQZVxDiytKpP6sk6Y17FUL8aS_G_DHR3P7krQrgQVVpZcI4stJGY4vSXhOncMCCPzYLfGh0vPAFzr6NnzjgdpKLXUCl9dPL9gXcw2Q"/>
+<div class="absolute inset-0 bg-primary/15"></div>
+</div>
+<div class="lg:col-span-5 p-8 lg:p-12 flex flex-col justify-center space-y-4">
+<span class="font-label-uppercase text-caption text-secondary tracking-[0.24em] uppercase">COLLECTION V • HERITAGE SPECIALTY</span>
+<h3 class="font-display-lg text-headline-md lg:text-display-lg-mobile text-on-surface font-normal">Traditional Silver Ornaments</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+              Payals, haslis, waist ornaments, and ceremonial pooja articles handcrafted using centuries-old repoussé and casting traditions.
+            </p>
+<div class="pt-4">
+<button class="px-6 py-3 border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-uppercase text-label-uppercase tracking-[0.2em] transition-colors" onclick="openDrawer('Traditional Silver Ornaments')">
+                Enquire Full Catalogue →
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       02 — FEATURED PIECES (Deep Charcoal #1C1B1A Gallery)
+       ========================================================================= -->
+<section class="w-full bg-primary-container text-surface-container-lowest py-24 md:py-32 px-margin md:px-margin-desktop">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-surface-container-highest/15">
+<div>
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.28em] uppercase block mb-3">02 — CURATED SELECTION</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-surface-container-lowest font-normal">Wholesale Highlights</h2>
+</div>
+<p class="font-body-md text-surface-variant max-w-md mt-4 md:mt-0 leading-relaxed">
+        Specimen articles available for wholesale volume casting and bulk procurement. Direct from the Sarafa foundry.
+      </p>
+</div>
+<!-- Asymmetric Feature Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left: Major Statement Article (Hero) -->
+<div class="lg:col-span-7 bg-primary border border-surface-container-highest/10 p-8 md:p-10 flex flex-col">
+<div class="relative overflow-hidden aspect-[4/5] w-full bg-inverse-surface/30 mb-8">
+<img alt="Kalyan Sculpted Choker SJ-001" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzBzBh4Y_PBVs_KUTrrqBJ0FXPP7cdzS1B0UR9ZbVtyXvt2uiP6sDN3WMNW-uHtXyFtvLAWdrXBBnvvmzwTASzHc9D0TyNoKGVtyh0pwcXlJcsnReIvwhO6SazZHfYID8_VRVhn9G8ioNz4tHAk7Uyuz0r8y__AHEQ9w90IzH67XaOJMg19AIlNiJIhvi0MfTASL1s-mZxDV9yCuWh2F9lMpyLRXMS00x77sRAgQ"/>
+<div class="absolute top-4 left-4 bg-primary-container/90 px-3 py-1 text-secondary-fixed font-label-uppercase text-[11px] tracking-[0.2em]">
+            REF: SJ-001
+          </div>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between border-b border-surface-container-highest/10 pb-4">
+<h3 class="font-display-lg text-headline-md text-surface-container-lowest font-normal">Kalyan Sculpted Choker</h3>
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-widest">MASTER ATELIER</span>
+</div>
+<p class="font-body-md text-surface-variant leading-relaxed">
+            Formed in high-density .925 sterling silver with a softly hammered, antique-brushed finish. Articulated rear hinges engineered specifically for comfort and heirloom retail displays.
+          </p>
+<div class="pt-4 flex items-center justify-between">
+<button class="px-6 py-3 border border-secondary-fixed text-secondary-fixed hover:bg-secondary-fixed hover:text-on-secondary-fixed font-label-uppercase text-label-uppercase tracking-[0.2em] transition-colors" onclick="prefillDrawer('SJ-001', 'Kalyan Sculpted Choker')">
+              Enquire for Wholesale
+            </button>
+<span class="font-caption text-caption text-surface-container-highest/60 uppercase tracking-widest">Gwalior Foundry Spec</span>
+</div>
+</div>
+</div>
+<!-- Right: Stack of 3 Secondary Articles -->
+<div class="lg:col-span-5 flex flex-col space-y-6">
+<!-- Piece SJ-002 -->
+<div class="bg-primary border border-surface-container-highest/10 p-6 flex flex-col sm:flex-row gap-6 items-center">
+<div class="w-full sm:w-36 h-36 flex-shrink-0 overflow-hidden bg-inverse-surface/30">
+<img alt="Virasat Etched Kada Pair SJ-002" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIVR8v_tpjtD0kgQ_hYnrH-gTTuNvsoCnTxHF7nLDBfcyWFkpVwMR6sbN1lwhuZHh_nj-b685602xt7DZEiSlir4xhg-N20YDlrOfVlVj5j0XtTlSaR6yNE_TjsZynKV7XGPKTTghx5rAqqBgnpsiZMTzr6Nb-ECP1z-IbaMLLHmuafktqjxSuTTH7Wk6AwNQem23C54LX8JvzXi20mGTqOTNl5MpPHdlTkfcfsA"/>
+</div>
+<div class="w-full space-y-2">
+<span class="font-label-uppercase text-[10px] text-secondary-fixed tracking-[0.22em] block">REF: SJ-002</span>
+<h4 class="font-display-lg text-headline-sm text-surface-container-lowest font-normal leading-tight">Virasat Etched Kada Pair</h4>
+<p class="font-body-md text-surface-variant text-xs line-clamp-2 leading-relaxed">
+              Solid core silver pair with deeply chiseled Gwalior floral motifs. Precision locking clasp.
+            </p>
+<div class="pt-2">
+<button class="inline-flex items-center gap-2 font-label-uppercase text-[11px] text-secondary-fixed hover:text-surface-bright tracking-[0.18em] border-b border-secondary-fixed/40 pb-0.5 transition-colors" onclick="prefillDrawer('SJ-002', 'Virasat Etched Kada Pair')">
+<span>Enquire Article</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Piece SJ-003 -->
+<div class="bg-primary border border-surface-container-highest/10 p-6 flex flex-col sm:flex-row gap-6 items-center">
+<div class="w-full sm:w-36 h-36 flex-shrink-0 overflow-hidden bg-inverse-surface/30">
+<img alt="Aura Fluid Cuff SJ-003" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8YQyWhaEyOO3rn2E44mlZN7ucYTNCPLy2AdHOJrZP5izvpZ28M90_jp-2byoLwzbepZg5c9JoatHHB50E6abM1yamL68JeFZM1IxQBVv-xrmhvM5E1kZ9Wx3CQzWMGz1FK_qgHlV4tCQ-fgIg4abjpNvNGQlcd6GZ-MbIIzY0hdzJB9z91giB0T1KK0y_hVWVNUn4oAvoey63WlIKtIwAaz1Z3fOd8V24R9FXUw"/>
+</div>
+<div class="w-full space-y-2">
+<span class="font-label-uppercase text-[10px] text-secondary-fixed tracking-[0.22em] block">REF: SJ-003</span>
+<h4 class="font-display-lg text-headline-sm text-surface-container-lowest font-normal leading-tight">Aura Fluid Cuff</h4>
+<p class="font-body-md text-surface-variant text-xs line-clamp-2 leading-relaxed">
+              Minimalist curvilinear sheet metal execution. Ergonomically contouring the forearm with satin polish.
+            </p>
+<div class="pt-2">
+<button class="inline-flex items-center gap-2 font-label-uppercase text-[11px] text-secondary-fixed hover:text-surface-bright tracking-[0.18em] border-b border-secondary-fixed/40 pb-0.5 transition-colors" onclick="prefillDrawer('SJ-003', 'Aura Fluid Cuff')">
+<span>Enquire Article</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Piece SJ-004 -->
+<div class="bg-primary border border-surface-container-highest/10 p-6 flex flex-col sm:flex-row gap-6 items-center">
+<div class="w-full sm:w-36 h-36 flex-shrink-0 overflow-hidden bg-inverse-surface/30">
+<img alt="Chandrika Droplet Earrings SJ-004" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZeK4WCXHx2LIlo5TTqBkZqWJfIeV5-WV-AmBQKLe3ypqOtRZKcybythJC-e26Zvjlb-9a2oDgrB17nPXcXJQS7fGSpGEaviavoPmHSuUg_kfQnMjWYK_Dc4ns5Y_qN0Z8NBcfHZcbH8eb7uuz3XldbHUJ3pfdtYfd1nMhy--GUEgzhnSmmkEGNsXar4vDG9YuVCRnVObX_paaHmHq-6s8WuzhfsUuMYqIW7zV2A"/>
+</div>
+<div class="w-full space-y-2">
+<span class="font-label-uppercase text-[10px] text-secondary-fixed tracking-[0.22em] block">REF: SJ-004</span>
+<h4 class="font-display-lg text-headline-sm text-surface-container-lowest font-normal leading-tight">Chandrika Droplets</h4>
+<p class="font-body-md text-surface-variant text-xs line-clamp-2 leading-relaxed">
+              Hand-hammered silver concave drops suspended on refined post-findings. Ideal retail counter staple.
+            </p>
+<div class="pt-2">
+<button class="inline-flex items-center gap-2 font-label-uppercase text-[11px] text-secondary-fixed hover:text-surface-bright tracking-[0.18em] border-b border-secondary-fixed/40 pb-0.5 transition-colors" onclick="prefillDrawer('SJ-004', 'Chandrika Droplets')">
+<span>Enquire Article</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       03 — WHOLESALE PARTNERSHIP: Split Layout & Direct Trade Form
+       ========================================================================= -->
+<section class="w-full bg-surface-container-low py-24 md:py-32 px-margin md:px-margin-desktop" id="wholesale-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left: Portrait Photography Feature -->
+<div class="lg:col-span-5 relative">
+<div class="border border-secondary/20 p-3 bg-surface">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-dim">
+<img alt="Shakuntala Jewellers Wholesale Trade Craft" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8YQyWhaEyOO3rn2E44mlZN7ucYTNCPLy2AdHOJrZP5izvpZ28M90_jp-2byoLwzbepZg5c9JoatHHB50E6abM1yamL68JeFZM1IxQBVv-xrmhvM5E1kZ9Wx3CQzWMGz1FK_qgHlV4tCQ-fgIg4abjpNvNGQlcd6GZ-MbIIzY0hdzJB9z91giB0T1KK0y_hVWVNUn4oAvoey63WlIKtIwAaz1Z3fOd8V24R9FXUw"/>
+</div>
+<div class="p-6 space-y-2">
+<span class="font-label-uppercase text-caption text-secondary tracking-widest uppercase block">COMMERCIAL INTEGRITY</span>
+<p class="font-display-lg text-headline-sm text-on-surface">Precision in weight, purity, and dispatch schedules.</p>
+</div>
+</div>
+</div>
+<!-- Right: Offerings and Minimalist Trade Form -->
+<div class="lg:col-span-7 space-y-12">
+<div class="space-y-4">
+<span class="font-label-uppercase text-caption text-secondary tracking-[0.28em] uppercase block">B2B TRADE ENGAGEMENT</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-normal leading-tight">
+            Your Trusted Partner in Silver Jewellery.
+          </h2>
+<p class="font-body-md text-on-surface-variant max-w-xl leading-relaxed">
+            Supplying esteemed retail showrooms, sovereign family jewelers, and modern lifestyle brands across Madhya Pradesh, Uttar Pradesh, and nationwide.
+          </p>
+</div>
+<!-- 4 Numbered Offerings with 1px Hairlines -->
+<div class="border-t border-b border-secondary/20 divide-y divide-secondary/20">
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<span class="font-label-uppercase text-label-uppercase text-secondary md:col-span-2">01</span>
+<span class="font-display-lg text-headline-sm text-on-surface md:col-span-5">Wholesale Collection Access</span>
+<p class="font-body-md text-on-surface-variant text-sm md:col-span-5">Unrestricted entry into our complete active 2025 catalogue with rolling line sheets.</p>
+</div>
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<span class="font-label-uppercase text-label-uppercase text-secondary md:col-span-2">02</span>
+<span class="font-display-lg text-headline-sm text-on-surface md:col-span-5">Bulk Inquiries &amp; Custom Casting</span>
+<p class="font-body-md text-on-surface-variant text-sm md:col-span-5">Proprietary mould duplication and bespoke master design development under non-disclosure.</p>
+</div>
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<span class="font-label-uppercase text-label-uppercase text-secondary md:col-span-2">03</span>
+<span class="font-display-lg text-headline-sm text-on-surface md:col-span-5">Retailer Partnerships</span>
+<p class="font-body-md text-on-surface-variant text-sm md:col-span-5">Consignment replenishment terms and seasonal stock balancing for registered trade partners.</p>
+</div>
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<span class="font-label-uppercase text-label-uppercase text-secondary md:col-span-2">04</span>
+<span class="font-display-lg text-headline-sm text-on-surface md:col-span-5">Dedicated Business Support</span>
+<p class="font-body-md text-on-surface-variant text-sm md:col-span-5">Direct line to our Sarafa workshop floor and rapid bullion settlement advisories.</p>
+</div>
+</div>
+<!-- Clean Form -->
+<div class="bg-surface p-8 md:p-10 border border-secondary/20 space-y-8">
+<div class="space-y-1">
+<h3 class="font-display-lg text-headline-sm text-on-surface">Initiate Commercial Inquiry</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Please register your business details below. A representative will contact you with wholesale pricing terms.</p>
+</div>
+<form class="space-y-6" id="trade-inquiry-form" onsubmit="handleTradeSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">Your Full Name</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm placeholder:text-outline-variant" placeholder="e.g. Vikramaditya Rathore" required="" type="text"/>
+</div>
+<!-- Business Name -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">Enterprise / Store Name</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm placeholder:text-outline-variant" placeholder="e.g. Rathore Jewellers Pvt Ltd" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- City -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">City &amp; State</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm placeholder:text-outline-variant" placeholder="e.g. Indore, Madhya Pradesh" required="" type="text"/>
+</div>
+<!-- Phone -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">Phone / WhatsApp</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm placeholder:text-outline-variant" placeholder="+91 98XXX XXXXX" required="" type="tel"/>
+</div>
+</div>
+<!-- Product Interest Dropdown -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">Primary Product Interest</label>
+<select class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm appearance-none rounded-none cursor-pointer">
+<option value="All Collections">Comprehensive Wholesale Catalogue (All Lines)</option>
+<option value="Silver Bangles">Silver Bangles &amp; Solid Kadas</option>
+<option value="Silver Bracelets">Articulated Silver Bracelets</option>
+<option value="Silver Necklaces">Chokers &amp; Traditional Torques</option>
+<option value="Silver Earrings">Earrings, Chandbalis &amp; Jhumkas</option>
+<option value="Traditional Silver Ornaments">Ceremonial &amp; Temple Silver Ornaments</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-3 pointer-events-none text-secondary text-sm">expand_more</span>
+</div>
+<!-- Message -->
+<div class="relative">
+<label class="block font-label-uppercase text-[11px] text-secondary tracking-widest uppercase mb-1">Anticipated Volume / Specific Requirements</label>
+<textarea class="w-full bg-transparent border-b border-outline/40 py-2.5 px-0 text-on-surface focus:outline-none focus:border-secondary transition-colors font-body-md text-sm placeholder:text-outline-variant" placeholder="Outline your order specifications, target timelines, or hallmarking preferences..." rows="3"></textarea>
+</div>
+<!-- Actions -->
+<div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto px-8 py-3.5 bg-primary text-surface font-label-uppercase text-label-uppercase tracking-[0.2em] font-medium hover:bg-secondary hover:text-on-secondary transition-colors" type="submit">
+                Send Enquiry
+              </button>
+<a class="w-full sm:w-auto px-6 py-3.5 border border-secondary text-on-surface font-label-uppercase text-label-uppercase tracking-[0.18em] flex items-center justify-center gap-2 hover:bg-surface-container transition-colors" href="https://wa.me/918104304050?text=Hello%20Shakuntala%20Jewellers,%20I%20would%20like%20to%20enquire%20about%20wholesale%20silver%20jewellery%20catalogue." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[18px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<p class="hidden text-xs font-label-uppercase tracking-widest text-secondary pt-2" id="form-success-msg">
+              ✓ Thank you. Your inquiry has been received. Our trade desk will contact your office shortly.
+            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       04 — THE HOUSE (Editorial Brand Spread)
+       ========================================================================= -->
+<section class="w-full bg-surface py-24 md:py-32 px-margin md:px-margin-desktop overflow-hidden">
+<div class="max-w-6xl mx-auto space-y-16">
+<div class="text-center space-y-3">
+<span class="font-label-uppercase text-caption text-secondary tracking-[0.3em] uppercase">03 — THE HOUSE</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-surface font-normal">Lineage in Pure Metal</h2>
+</div>
+<!-- Editorial Magazine Two-Image Spread -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Offset Large Photo -->
+<div class="md:col-span-7 relative">
+<div class="border border-secondary/20 p-2 bg-surface-container-lowest">
+<img alt="Atelier Shakuntala Jewellers Gwalior Metalwork" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIVR8v_tpjtD0kgQ_hYnrH-gTTuNvsoCnTxHF7nLDBfcyWFkpVwMR6sbN1lwhuZHh_nj-b685602xt7DZEiSlir4xhg-N20YDlrOfVlVj5j0XtTlSaR6yNE_TjsZynKV7XGPKTTghx5rAqqBgnpsiZMTzr6Nb-ECP1z-IbaMLLHmuafktqjxSuTTH7Wk6AwNQem23C54LX8JvzXi20mGTqOTNl5MpPHdlTkfcfsA"/>
+</div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-widest uppercase mt-3 block">PLATE 07 — COLD HAMMERING SOLID STERLING</span>
+</div>
+<!-- Offset Column with Small Image and Pull Quote -->
+<div class="md:col-span-5 space-y-8 md:-ml-8 z-10">
+<div class="border border-secondary/20 p-2 bg-surface-container-lowest w-4/5 hidden md:block">
+<img alt="Artisanal Silver Earring Still" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZeK4WCXHx2LIlo5TTqBkZqWJfIeV5-WV-AmBQKLe3ypqOtRZKcybythJC-e26Zvjlb-9a2oDgrB17nPXcXJQS7fGSpGEaviavoPmHSuUg_kfQnMjWYK_Dc4ns5Y_qN0Z8NBcfHZcbH8eb7uuz3XldbHUJ3pfdtYfd1nMhy--GUEgzhnSmmkEGNsXar4vDG9YuVCRnVObX_paaHmHq-6s8WuzhfsUuMYqIW7zV2A"/>
+</div>
+<div class="space-y-6 bg-surface p-6 md:p-8 border-l-2 border-secondary">
+<p class="font-display-lg text-headline-sm md:text-headline-md text-on-surface italic font-light leading-snug">
+              “Silver shaped not merely for adornment, but as an enduring dialogue between heritage technique and contemporary form.”
+            </p>
+<div class="space-y-3 font-body-md text-on-surface-variant text-sm leading-relaxed">
+<p>
+                From our foundational roots within Gwalior's historic Sarafa bazaar, Shakuntala Jewellers preserves the sovereign dignity of Indian silver craftsmanship. Each ornament undergoes painstaking hand-forging, stone burnishing, and strict quality verification.
+              </p>
+<p class="text-xs text-outline italic">
+                [Brand story to be supplied by the business — celebrating craftsmanship and retail partnership in Gwalior].
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       CONTACT & CONVERSATION: Deep Charcoal Minimalist Hub
+       ========================================================================= -->
+<section class="w-full bg-primary-container text-surface-container-lowest py-20 px-margin md:px-margin-desktop border-t border-surface-container-highest/10">
+<div class="max-w-6xl mx-auto space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-8 border-b border-surface-container-highest/15">
+<div class="space-y-2">
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.28em] uppercase">DIRECT TRADE ACCESS</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-surface-container-lowest font-normal">Let’s Begin a Conversation.</h2>
+</div>
+<p class="font-body-md text-surface-variant text-sm mt-4 md:mt-0">
+          Direct liaison for regional retail distribution, stockists, and wholesale bullion accounts.
+        </p>
+</div>
+<!-- 3 Hairline Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-surface-container-highest/15 border-b border-surface-container-highest/15 pb-12">
+<!-- Column 1: WhatsApp -->
+<div class="py-6 md:py-0 md:px-8 first:pl-0 space-y-3">
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.2em] uppercase block">Direct Trade Line</span>
+<a class="group flex items-center gap-3 font-display-lg text-headline-sm text-surface-container-lowest hover:text-secondary-fixed transition-colors" href="https://wa.me/918104304050" rel="noopener noreferrer" target="_blank">
+<span>+91 81043 04050</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+</a>
+<p class="font-body-md text-surface-variant text-xs">Direct WhatsApp for immediate rate cards and photographic catalogs.</p>
+</div>
+<!-- Column 2: Location -->
+<div class="py-6 md:py-0 md:px-8 space-y-3">
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.2em] uppercase block">Foundry &amp; Office</span>
+<p class="font-display-lg text-headline-sm text-surface-container-lowest">
+            Gwalior, Madhya Pradesh
+          </p>
+<p class="font-body-md text-surface-variant text-xs">Sarafa Bazaar, Lashkar. Full commercial address and visiting protocols provided to verified trade partners.</p>
+</div>
+<!-- Column 3: Instagram -->
+<div class="py-6 md:py-0 md:px-8 last:pr-0 space-y-3">
+<span class="font-label-uppercase text-caption text-secondary-fixed tracking-[0.2em] uppercase block">Digital Archive</span>
+<a class="group flex items-center gap-2 font-display-lg text-headline-sm text-surface-container-lowest hover:text-secondary-fixed transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>@shakuntala_jewellers_gwalior</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+</a>
+<p class="font-body-md text-surface-variant text-xs">Daily atelier updates, fresh casting runs, and wholesale visual previews.</p>
+</div>
+</div>
+<!-- Quick Inquiry Action Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-6 pt-4">
+<span class="font-label-uppercase text-caption text-surface-variant tracking-widest uppercase">
+          WHOLESALE SPEC • MINIMUM ORDER QUANTITIES UPON REGISTRATION
+        </span>
+<button class="px-6 py-2.5 border border-surface-container-highest/30 text-surface-container-lowest hover:border-secondary-fixed hover:text-secondary-fixed font-label-uppercase text-caption tracking-[0.2em] transition-colors" onclick="openDrawer('General Catalog Request')">
+          Request Physical Lookbook →
+        </button>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SUB-FOOTER ATTRIBUTION
+       ========================================================================= -->
+<div class="w-full bg-primary px-margin md:px-margin-desktop py-4 border-t border-surface-container-highest/10 flex flex-col sm:flex-row items-center justify-between text-surface-variant font-caption text-caption">
+<span>SHAKUNTALA JEWELLERS • GWALIOR ARCHIVE 2025</span>
+<span class="text-surface-container-highest/60 italic mt-1 sm:mt-0">Demo concept. Imagery and copy are placeholders.</span>
+</div>
+<!-- =========================================================================
+       INTERACTIVE WHOLESALE ENQUIRY DRAWER (SLIDE-OVER MODAL)
+       ========================================================================= -->
+<div aria-hidden="true" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0" id="enquiry-drawer">
+<!-- Backdrop Scrim -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-sm transition-opacity" id="drawer-backdrop" onclick="closeDrawer()"></div>
+<!-- Drawer Panel (Slides from Right) -->
+<div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-surface p-8 sm:p-10 shadow-2xl flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 ease-out border-l border-secondary/30" id="drawer-panel">
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-secondary/20 pb-4">
+<div>
+<span class="font-label-uppercase text-[10px] text-secondary tracking-[0.28em] uppercase block">B2B SPECIFICATION SLIP</span>
+<h3 class="font-display-lg text-headline-sm text-on-surface">Wholesale Enquiry</h3>
+</div>
+<button aria-label="Close drawer" class="p-2 text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<!-- Selected Product Highlight -->
+<div class="p-4 bg-surface-container-low border border-secondary/20 space-y-1">
+<span class="font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Target Article</span>
+<p class="font-display-lg text-headline-sm text-on-surface" id="drawer-article-name">Kalyan Sculpted Choker</p>
+<span class="font-caption text-caption text-outline block" id="drawer-article-ref">REF: SJ-001</span>
+</div>
+<form class="space-y-5" onsubmit="handleDrawerSubmit(event)">
+<div class="space-y-1">
+<label class="block font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Buyer / Retailer Name</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2 text-on-surface focus:outline-none focus:border-secondary font-body-md text-sm placeholder:text-outline-variant" id="drawer-name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="block font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Showroom / City</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2 text-on-surface focus:outline-none focus:border-secondary font-body-md text-sm placeholder:text-outline-variant" id="drawer-city" placeholder="Business Name &amp; City" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="block font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">WhatsApp Number</label>
+<input class="w-full bg-transparent border-b border-outline/40 py-2 text-on-surface focus:outline-none focus:border-secondary font-body-md text-sm placeholder:text-outline-variant" id="drawer-phone" placeholder="+91 98XXX XXXXX" required="" type="tel"/>
+</div>
+<div class="space-y-1">
+<label class="block font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Inquiry Type</label>
+<select class="w-full bg-transparent border-b border-outline/40 py-2 text-on-surface focus:outline-none focus:border-secondary font-body-md text-sm appearance-none rounded-none cursor-pointer">
+<option>Sample Unit Inspection</option>
+<option>Bulk Order (500g - 2kg)</option>
+<option>Master Line Commercial Consignment (5kg+)</option>
+<option>Custom Hallmarking / Stamping</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="block font-label-uppercase text-[10px] text-secondary tracking-widest uppercase">Notes</label>
+<textarea class="w-full bg-transparent border-b border-outline/40 py-2 text-on-surface focus:outline-none focus:border-secondary font-body-md text-sm placeholder:text-outline-variant" placeholder="Specific weight requirements or delivery target..." rows="2"></textarea>
+</div>
+<div class="pt-4 space-y-3">
+<button class="w-full py-3.5 bg-primary text-surface font-label-uppercase text-label-uppercase tracking-[0.2em] font-medium hover:bg-secondary hover:text-on-secondary transition-colors" type="submit">
+              Dispatch to Trade Desk
+            </button>
+<button class="w-full py-3 border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-uppercase text-[11px] tracking-[0.18em] flex items-center justify-center gap-2 transition-colors" onclick="dispatchWhatsAppFromDrawer()" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Send via WhatsApp (+91 81043 04050)</span>
+</button>
+</div>
+<div class="hidden p-3 bg-surface-container border border-secondary text-center" id="drawer-success">
+<p class="font-label-uppercase text-caption text-secondary tracking-widest">Enquiry queued. A trade officer will connect shortly.</p>
+</div>
+</form>
+</div>
+<div class="pt-6 border-t border-secondary/15">
+<p class="font-caption text-caption text-outline text-center">
+          Shakuntala Jewellers Pvt. Ltd. • Lashkar, Gwalior
+        </p>
+</div>
+</div>
+</div>
+<!-- =========================================================================
+       INLINE INTERACTIVE SCRIPT (Vanilla JS for Smooth Micro-Interactions)
+       ========================================================================= -->
+<script>
+    function openDrawer(articleName, refCode) {
+      var drawer = document.getElementById('enquiry-drawer');
+      var panel = document.getElementById('drawer-panel');
+      var nameEl = document.getElementById('drawer-article-name');
+      var refEl = document.getElementById('drawer-article-ref');
+      var successEl = document.getElementById('drawer-success');
+
+      if (nameEl) nameEl.textContent = articleName || 'General Wholesale Collection';
+      if (refEl) refEl.textContent = refCode ? 'REF: ' + refCode : 'REF: MASTER-TRADE-2025';
+      if (successEl) successEl.classList.add('hidden');
+
+      drawer.classList.remove('pointer-events-none', 'opacity-0');
+      drawer.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function prefillDrawer(refCode, articleName) {
+      openDrawer(articleName, refCode);
+    }
+
+    function closeDrawer() {
+      var drawer = document.getElementById('enquiry-drawer');
+      var panel = document.getElementById('drawer-panel');
+
+      drawer.classList.add('opacity-0');
+      drawer.classList.remove('opacity-100');
+      panel.classList.add('translate-x-full');
+      panel.classList.remove('translate-x-0');
+
+      setTimeout(function() {
+        drawer.classList.add('pointer-events-none');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    function handleTradeSubmit(e) {
+      e.preventDefault();
+      var msg = document.getElementById('form-success-msg');
+      if (msg) {
+        msg.classList.remove('hidden');
+      }
+      setTimeout(function() {
+        e.target.reset();
+      }, 2000);
+    }
+
+    function handleDrawerSubmit(e) {
+      e.preventDefault();
+      var success = document.getElementById('drawer-success');
+      if (success) success.classList.remove('hidden');
+      setTimeout(function() {
+        closeDrawer();
+      }, 2200);
+    }
+
+    function dispatchWhatsAppFromDrawer() {
+      var name = document.getElementById('drawer-name').value || 'Trade Client';
+      var city = document.getElementById('drawer-city').value || 'India';
+      var article = document.getElementById('drawer-article-name').textContent;
+      var text = encodeURIComponent('Hello Shakuntala Jewellers Gwalior. I (' + name + ', ' + city + ') would like to enquire about wholesale pricing for ' + article + '.');
+      window.open('https://wa.me/918104304050?text=' + text, '_blank');
+    }
+
+    // Keyboard support for drawer ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeDrawer();
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-surface-container-low"><div class="w-full px-margin md:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop pb-space-xl border-b border-surface-container-highest/10"><div class="md:col-span-5 space-y-space-md"><span class="font-display-lg text-headline-md text-surface-container-lowest tracking-[0.16em] uppercase block">SHAKUNTALA JEWELLERS</span><p class="font-body-md text-surface-variant max-w-md">Generational wholesale purveyors of 925 sterling silver and high-grade artisanal ornaments rooted in the heritage metalsmithing traditions of Gwalior.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="font-label-uppercase text-caption text-secondary border border-secondary/40 px-2 py-1">BIS HALLMARKED</span><span class="font-label-uppercase text-caption text-secondary border border-secondary/40 px-2 py-1">.925 STERLING</span></div></div><div class="md:col-span-2 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Catalogues</h3><ul class="space-y-space-xs font-body-md text-surface-container-highest text-sm"><li><a class="hover:text-surface-bright transition-colors" data-path="collections" href="#">Bridal Silver</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="collections" href="#">Temple Adornments</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="collections" href="#">Filigree Articles</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="collections" href="#">Gwalior Heritage</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Wholesale Spec</h3><ul class="space-y-space-xs font-body-md text-surface-container-highest text-sm"><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Bullion Indices</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Bulk Invoicing</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">Purity Certification</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="wholesale" href="#">B2B Dispatch</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h3 class="font-label-uppercase text-caption text-secondary tracking-widest uppercase">Atelier &amp; Office</h3><p class="font-body-md text-surface-container-highest text-sm leading-relaxed">Sarafa Bazaar, Lashkar<br/>Gwalior, Madhya Pradesh — 474001<br/><span class="text-secondary mt-1 block">b2b@shakuntalajewellers.com</span></p></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><p>© 2025 Shakuntala Jewellers Pvt. Ltd. All rights reserved.</p><p class="tracking-widest uppercase text-[10px] text-surface-container-highest/60">Engineered by <span class="text-surface-container-lowest font-medium tracking-normal">Y2X Digital Agency</span></p></div></div></footer></body></html>
